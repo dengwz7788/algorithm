@@ -1,0 +1,57 @@
+ES6的特性，常用的
+1.  let 和 const 
+2.  默认参数, 函数的形参可以直接赋值默认值
+3.  扩展运算符 ...
+4.  模板字符串 `${name}`
+5.  Object.keys() 返回一个对象的key的数组
+6.  箭头函数，啥都没有，this从外面传入，不能被new
+7.  Array.protype.foreach
+8.  Array.protype.map
+9.  Array.protype.filter
+10. Array.protype.some/every 只有一个真/全为真
+11. Array.protype.reduce 遍历数组，第一个值是上一个值，第二个是当前的值
+12. Array.protype.find/findIndex 
+12. Promise
+13. class => class的本质是function， class是function的语法糖
+14. 解析赋值
+15. for in 遍历方式，可遍历数组和对象 for of 遍历方式，只能遍历数组
+16. 新增set和map两个数据结构，set：无序集合，map：hash表，key可以为对象
+17. 模块化（import/export）
+
+======>
+ES7的特性，常用的
+1.  Array.protype.includes 替换 Array.protype.indexOf
+2.  求幂运算 Math.pow ==> **
+
+======>
+ES8的特性，常用的
+1. Object.values() 返回一个对象的value的数组
+2. Object.entries() 返回一个对象的键值对数组
+3. async/await 
+4. String.protype.padStart/padEnd 填充到对应的字符串长度
+
+======>
+ES9的特性，常用的
+1. Promise.finally 无论失败还是成功的状态，都会执行
+2. rest 对象的扩展运算
+  
+======>
+ES10的特性，常用的
+1. String.protype.trimStart/trimEnd 移除前面的空格/后面的空格
+2. Array.protype.flat 将数组打平
+3. Array.protype.flatMap 
+4. Object.protype.fromEntries 将键值对列表转换对象
+
+======>
+ES11的特性，常用的
+1. BigInt 大数
+2. ?. 判断对象的key是否存在
+3. promise.allSettled 返回带有状态的结果集
+4. GlobalThis 打通nodejs和windows环境的全局变量
+
+======>
+ES12的特性，常用的 
+1. FinalizationRegistry 对象垃圾回收时请求一个回调
+2. WeakRefs 将强引用改成弱引用
+3. 默认值 ||=
+4. String.protype.replaceAll 全部替换

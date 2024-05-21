@@ -1,0 +1,35 @@
+VUE3的各个版本的新特性
+
+1. setup - 出发在 beforeCreate之前执行, 没有this
+2. 双向绑定的绑定
+      ref - 通过扩充value属性进行双向绑定，主要是基础类型不能被proxy代理
+      reactive - 通过proxy进行代理 结合 reflect  
+3. slots 自定义插槽
+4. 新增 选项模式 和 组合模式
+5. watch和 watchEffect - 任何一个依赖性发生变化重新运行
+6. fragments 多根模式
+7. Teleport  传送到制定的位置，可以是ID，class，或者标签名
+8. Suspense  异步组件
+9. watch 新增了 flush属性 - 回调的时间
+
+VUE3.1版本的新特色
+1. BigInt 大数的支持
+
+
+VUE3.2版本的新特色
+1. 新增script标签里面 setup 语法糖
+2. components组件的自动注册
+3. defineProps获取上下文的props
+4. defineEmit 定义的事件
+5. defineCustomElement 创建原生自定义元素
+6. Expose 组件抛出一个对象
+
+VUE3.3版本的新特色
+1. defineModel 优化了v-model的代码
+2. 静态常量提升
+
+VUE3.4版本的新特色
+1. 模板解析器重写
+2. 响应式系统重写
+3. watch新增once选型
+4. 对于mathML的支持

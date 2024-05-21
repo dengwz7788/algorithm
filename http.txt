@@ -1,0 +1,30 @@
+1. http状态码 - 304 这个老六 - 没有修改直接读缓存
+             - 301 永久重定向 ，302 临时重定向(不改变URL)
+
+2.  HTTP缓存 - 强制缓存 和 协商缓存 区别
+             - 强制缓存 发生在客户端本地
+                Expires 过期时间 Date字段表示
+                Cache-Control 缓存指令 max-age 相关
+                pragma
+             - 协商缓存
+                 Last-modified/if-modified-Since 资源最后修改时间
+                 Etag/if-none-Match: 资源唯一标识符
+
+3. http跨域相关的字段
+    Access-Cntrol-Allow-Origin 访问资源
+    Access-Control-Allow-Method 方法
+    Access-Control-Allow-Headers 头部字段
+    Access-Control-Allow-Credentials cookies
+
+4. 简单请求和复杂请求
+    简单请求：
+        1. 三种方法，get post和 Head
+        2. Accept/Accept-language/Content-language/content-type
+        3. 如果是post content-type 只能是 application/x-www-form-urlencode multipart/form-data text/plain
+
+5. http2 优化点 -  由于二进制分帧层的优化导致了粘包问题，通过streamID 和 帧类型，帧长度 来解决粘包问题
+    1. 多路复用，解决了浏览器并发的限制
+    2. 服务器推送
+    3. 头部压缩 - hpack压缩算法
+    4. 请求优先级
+    5. 静态资源缓存
